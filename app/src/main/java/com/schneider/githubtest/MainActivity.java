@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this,"This is an Indonesia build",Toast.LENGTH_SHORT)
+        Toast.makeText(this,"This is an india build",Toast.LENGTH_SHORT)
                 .show();
     }
 }
