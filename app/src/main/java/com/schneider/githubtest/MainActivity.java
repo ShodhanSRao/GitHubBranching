@@ -1,9 +1,8 @@
 package com.schneider.githubtest;
 
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
 
 import java.util.Locale;
 
