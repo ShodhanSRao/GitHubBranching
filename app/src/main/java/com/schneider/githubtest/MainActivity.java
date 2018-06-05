@@ -1,9 +1,11 @@
 package com.schneider.githubtest;
 
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -17,6 +19,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    }
+
+    public static void setFontForEditables(View parent, String inFontPath) {
+        for (int i = ((ViewGroup)parent).getChildCount() - 1; i >= 0; i--) {
+            final View child = ((ViewGroup)parent).getChildAt(i);
+            if (child instanceof ViewGroup) {
+                setFontForEditables((ViewGroup) child,inFontPath);
+            } else if (child instanceof TextView) {
+               // ((TextView) child).setTypeface(getFont(inFontPath));
+            }
+            else if (child instanceof EditText) {
+             //   ((EditText) child).setTypeface(getFont(inFontPath));
+            }
+        }
     }
 
  
