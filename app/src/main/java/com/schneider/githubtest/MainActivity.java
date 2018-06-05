@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    int variableforIndia = 101;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
