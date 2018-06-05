@@ -19,15 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public  Locale getCurrentLocale() {
-        Locale locale = null;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            locale = this.getResources().getConfiguration().getLocales().get(0);
-        } else {
-            locale = this.getResources().getConfiguration().locale;
-        }
-        return locale;
-    }
+ 
 
     public static String getFormattedDate(String date){
         try {
